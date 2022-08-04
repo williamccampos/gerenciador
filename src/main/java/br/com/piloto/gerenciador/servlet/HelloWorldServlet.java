@@ -10,18 +10,18 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
 @WebServlet(urlPatterns = "/hello")
-public class HelloWorldServlet extends HttpServlet{
-	
+public class HelloWorldServlet extends HttpServlet {
+
 	@Override
 	protected void service(HttpServletRequest req, HttpServletResponse resp) throws IOException {
-		
+
 		PrintWriter out = resp.getWriter();
 		out.println("<html>");
 		out.println("<body>");
 		out.println("Hello World, welcome to Servlet Pilot");
 		out.println("</body>");
 		out.println("</html>");
-		
+
 		System.out.println("Está funcionando o Servlet");
 	}
 
