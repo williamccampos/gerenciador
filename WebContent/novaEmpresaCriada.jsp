@@ -1,10 +1,13 @@
-<%
-String nomeEmpresa = "Alura";
-System.out.println(nomeEmpresa);
-%>
+<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 
-<html><body>
+<html>
+	<body>
+		<c:if test="${not empty empresa}">
+			Empresa ${empresa} cadastrada com sucesso!
+		</c:if>
 
-Empresa <%= nomeEmpresa %> cadastrada com sucesso!
-
-</body></html>
+		<c:if test="${empty empresa}">
+			Nenhuma empresa cadastrada!
+		</c:if>
+	</body>
+</html>
