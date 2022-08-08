@@ -3,12 +3,12 @@ package br.com.piloto.gerenciador.servlet;
 import java.util.Date;
 
 public class Empresa {
-	
+
 	private Integer id;
 	private String nome;
 	private Date dataAbertura = new Date();
 	
-	public int getId() {
+	public Integer getId() {
 		return id;
 	}
 	public void setId(Integer id) {
@@ -21,12 +21,11 @@ public class Empresa {
 		this.nome = nome;
 	}
 	
-	public Date getDataAbertura() {
-		return dataAbertura;
-	}
-	
 	public void setDataAbertura(Date dataAbertura) {
 		this.dataAbertura = dataAbertura;
 	}
-
+	
+	public Date getDataAbertura() {
+		return dataAbertura;
+	}
 }
